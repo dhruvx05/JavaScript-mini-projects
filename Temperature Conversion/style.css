@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;  /* This centers inline and block elements horizontally */
+}
+
+.option {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px auto;  /* auto left-right margin centers block */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 300px;  /* keeps width limited and centered */
+  transition: background-color 0.3s;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  margin: 10px auto;
+  display: block;  /* so margin auto works */
+}
+
+button {
+  margin: 15px auto 0 auto;
+  display: block;  /* so margin auto works */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+.selected-label {
+  color: #007bff;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+

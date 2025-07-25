@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Russian Roulette</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎲 Russian Roulette</h1>
+
+    <div class="players">
+      <div class="player" id="player1">👤 Player 1</div>
+      <div class="player" id="player2">👤 Player 2</div>
+    </div>
+
+    <div class="bullet-selector">
+      <label for="bulletCount">Select Bullets:</label>
+      <select id="bulletCount">
+        <option value="1">1 Bullet</option>
+        <option value="2">2 Bullets</option>
+        <option value="3">3 Bullets</option>
+        <option value="4">4 Bullets</option>
+        <option value="5">5 Bullets</option>
+        <option value="6">6 Bullets</option>
+      </select>
+    </div>
+
+    <div class="chamber">
+      <div id="revolver">🔫</div>
+      <p id="currentPlayer">🎯 Player 1's Turn</p>
+      <p id="statusMessage">Spin the chamber to begin!</p>
+    </div>
+
+    <div class="controls">
+      <button id="spinBtn">🔁 Spin Chamber</button>
+      <button id="shootBtn" disabled>🔫 Pull Trigger</button>
+    </div>
+
+    <div class="scoreboard">
+      <h3>📊 Scoreboard</h3>
+      <p id="score1">Player 1: 0 Wins | 0 Deaths</p>
+      <p id="score2">Player 2: 0 Wins | 0 Deaths</p>
+    </div>
+
+    <button id="restartBtn">🔄 Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

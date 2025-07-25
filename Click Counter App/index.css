@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    font-size: 50px;
+    color: #007bff;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#countup-btn {
+    background-color: green;
+    color: white;
+}
+
+#countdown-btn {
+    background-color: red;
+    color: white;
+}
+
+#reset-btn {
+    background-color: gray;
+    color: white;
+}

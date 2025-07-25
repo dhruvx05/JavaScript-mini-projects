@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  backdrop-filter: brightness(0.9);
+}
+
+.game-container {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+h1 {
+  color: #ff9d76;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #ff6a6a;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.player {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcccc;
+}
+
+.bullet-selector select {
+  padding: 10px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+#revolver {
+  font-size: 70px;
+  transition: transform 1s ease;
+  display: inline-block;
+  margin: 20px 0;
+  filter: drop-shadow(0 0 5px red);
+}
+
+.rotate {
+  animation: spin 1s ease;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+
+#currentPlayer {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#statusMessage {
+  margin: 10px 0;
+  font-style: italic;
+  color: #ffdddd;
+}
+
+.controls button,
+#restartBtn {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.controls button:hover,
+#restartBtn:hover {
+  background: cyan;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px cyan;
+}
+
+.controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.scoreboard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.95rem;
+  color: #ffdada;
+}

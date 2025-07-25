@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧠 Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Productivity Dashboard</h1>
+
+    <!-- Timer Section -->
+    <section class="timer">
+      <h2>⏳ Pomodoro Timer</h2>
+      <div id="timer-display">25:00</div>
+      <div class="button-group">
+        <button id="start-btn">Start</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </section>
+
+    <!-- Quote Generator Section -->
+    <section class="quote">
+      <h2>💬 Quote of the Day</h2>
+      <p id="quote-text">Click below to get inspired!</p>
+      <button id="new-quote">New Quote</button>
+    </section>
+
+    <!-- Theme Toggle Section -->
+    <section class="theme-toggle">
+      <button id="toggle-theme">🌞 Toggle Light/Dark</button>
+    </section>
+
+    <!-- Notes Section -->
+    <section class="notes">
+      <h2>📝 Notes</h2>
+      <input type="text" id="note-input" placeholder="Write a note..." />
+      <button id="add-note">Add Note</button>
+      <ul id="note-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
